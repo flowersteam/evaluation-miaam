@@ -1,0 +1,9 @@
+# Runtime deps for the LLM/VLM knowledge-tracing eval.
+#
+# The pipeline talks to any OpenAI-compatible chat endpoint; we use
+# OpenRouter (https://openrouter.ai) so no local inference is required.
+
+polars>=1.0       # build_windows / run_eval / score parquet I/O
+openai>=1.40      # AsyncOpenAI client against the OpenRouter endpoint
+scikit-learn>=1.3 # AUC, Brier in score_kt.py
+pillow>=10        # image decoding before base64 encoding for vision modality

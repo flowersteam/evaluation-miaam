@@ -1,0 +1,4 @@
+*.ipynb_checkpoints
+*.jupyter
+*.virtual_documents
+*.jupyter_ystore_db
